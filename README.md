@@ -26,4 +26,7 @@ A Spring Boot application for user registration, authentication, and admin manag
 ## Run Locally
 ```bash
 mvn clean package
+## Or
+mvn clean install -DskipTests
+
 java -jar target/mykare-0.0.1-SNAPSHOT.jar
