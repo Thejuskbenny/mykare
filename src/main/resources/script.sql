@@ -1,0 +1,2 @@
+INSERT INTO users (id, name, email, gender, password, ip_address, country, role, created_at, updated_at)
+VALUES (1, 'Admin User', 'admin@example.com', 'MALE', '$2a$10$DowJonesLazyDogQuickBrownFox.HLPBt.T4ZaLzCNAUOokn8VRRu', '127.0.0.1', 'Local', 'ADMIN', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
