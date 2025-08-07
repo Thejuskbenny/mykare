@@ -1,0 +1,2 @@
+INSERT INTO users (name, email, gender, password, ip_address, country, role, created_at, updated_at)
+VALUES ( 'Admin', 'admin@mykare.com', 'MALE', 'admin123', '127.0.0.1', 'INDIA', 'ADMIN', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);

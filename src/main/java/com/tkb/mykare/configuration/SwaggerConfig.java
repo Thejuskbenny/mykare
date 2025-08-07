@@ -16,12 +16,12 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("User Management API")
+                        .title("mykare")
                         .version("1.0.0")
-                        .description("A comprehensive user management system with registration, authentication, and admin features")
+                        .description("mykare test API for user management")
                         .contact(new Contact()
                                 .name("API Support")
-                                .email("support@example.com")))
+                                .email("support@mykare.com")))
                 .addSecurityItem(new SecurityRequirement().addList("basicAuth"))
                 .components(new Components()
                         .addSecuritySchemes("basicAuth",

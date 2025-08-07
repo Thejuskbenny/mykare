@@ -3,6 +3,7 @@ package com.tkb.mykare.service;
 import com.tkb.mykare.dto.IpLocationDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.client.RestClientException;
@@ -17,7 +18,7 @@ public class IpLocationService {
     private final RestTemplate restTemplate;
 
     public IpLocationService() {
-        this.restTemplate = new RestTemplate();
+        this.restTemplate = new RestTemplate(new SimpleClientHttpRequestFactory());
     }
 
     public String getCurrentIpAddress() {

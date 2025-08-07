@@ -12,20 +12,26 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
     show-sql: true
     properties:
       hibernate:
         format_sql: true
   sql:
     init:
-      data-locations: classpath:script.sql
+      mode: always
+      continue-on-error: true
+      enabled: true
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
 server:
   port: 8080
 logging:
   level:
-    com.usermanagement: DEBUG
-    org.springframework.security: DEBUG
+    com.mykare: DEBUG
+    org:
+      springframework.security: DEBUG
+      hibernate.SQL: DEBUG
 springdoc:
   api-docs:
     path: /api-docs
