@@ -2,7 +2,7 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY target/mykare-1.0.0.jar app.jar #update with your actual JAR file name
+COPY target/mykare-1.0.0.jar app.jar
 
 EXPOSE 8080
 
